@@ -1,3 +1,5 @@
+// This block of code is imperative
+
 function cookSteak(steakWeight, desiredDoneness) {
     let grillTemperature = 0;
     let steakTemperature = 0;
@@ -11,16 +13,18 @@ function cookSteak(steakWeight, desiredDoneness) {
     
     // Step 3: Cook the steak
     while (steakTemperature < desiredDoneness) {
-      // Grill the steak and measure internal temperature
-      // Adjust grill temperature and cooking time based on steakWeight and desiredDoneness
-      // Update steakTemperature
+
+        grillTemperature += 4
+        steakTemperature += 7
       
-      // If the steak is done, break out of the loop
+        if(steakTemperature >= desiredDoneness) {
+          break
+        }
     }
     
     // Step 4: Serve the steak
     if (steakTemperature >= desiredDoneness) {
-      return 'Steak is ready to serve!';
+      return 'Steak is ready to serve!'
     } else {
       return 'Steak needs more cooking.';
     }
